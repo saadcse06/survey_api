@@ -18,12 +18,8 @@ class CreateInstitutesTable extends Migration
             $table->string('INSTITUTE_ID',15)->unsigned()->unique();
             $table->string('EIIN',6);
             $table->foreign('EIIN')->references('EIIN')->on('users');
-            $table->integer('LATITUDE_DEG',10)->nullable();
-            $table->integer('LATITUDE_MIN',10)->nullable();
-            $table->integer('LATITUDE_SEC',10)->nullable();
-            $table->integer('LONGITUDE_DEG',10)->nullable();
-            $table->integer('LONGITUDE_MIN',10)->nullable();
-            $table->integer('LONGITUDE_SEC',10)->nullable();
+            $table->integer('LATITUDE',10)->nullable();
+            $table->integer('LONGITUDE',10)->nullable();
             $table->string('INSTITUTE_NAME_NEW',150)->nullable();
             $table->string('INSTITUTE_NAME_BANGLA',300)->nullable();
             $table->string('LOCATION',100)->nullable();
