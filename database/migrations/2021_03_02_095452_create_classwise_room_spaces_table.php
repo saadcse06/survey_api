@@ -25,6 +25,7 @@ class CreateClasswiseRoomSpacesTable extends Migration
             $table->integer('PACKA_SFT',3)->nullable();
             $table->integer('SEMI_PACKA_SFT',3)->nullable();
             $table->integer('KANCHA_SFT',3)->nullable();
+            $table->integer('YEAR',4)->nullable();
             $table->timestamps();
         });
     }

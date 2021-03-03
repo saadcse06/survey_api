@@ -59,6 +59,6 @@ class CreateBuildingUsesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('building_uses');
+        //Schema::dropIfExists('building_uses');
     }
 }
