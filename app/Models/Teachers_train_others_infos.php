@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Building_uses extends Model
+class Teachers_train_others_infos extends Model
 {
     //
 }

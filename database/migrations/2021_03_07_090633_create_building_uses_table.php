@@ -21,10 +21,8 @@ class CreateBuildingUsesTable extends Migration
             $table->integer('INST_HEAD_ROOM',3)->nullable();
             $table->integer('TEACHERS_ROOM',3)->nullable();
             $table->integer('CLASS_ROOM',3)->nullable();
-            $table->integer('CLASS_ROOM_MULTIMEDIA',2)->nullable();
-            $table->integer('LABORATORY',1)->nullable();
-            $table->integer('LIBRARY',1)->nullable();
-            $table->integer('COMPUTER_LAB',1)->nullable();
+            $table->integer('LABORATORY',2)->nullable();
+            $table->integer('LIBRARY',2)->nullable();
             $table->integer('MALE_COMMON_ROOM',1)->nullable();
             $table->integer('FEMALE_COMMON_ROOM',1)->nullable();
             $table->integer('SICK_ROOM',3)->nullable();
@@ -59,6 +57,6 @@ class CreateBuildingUsesTable extends Migration
      */
     public function down()
     {
-        //Schema::dropIfExists('building_uses');
+        Schema::dropIfExists('building_uses');
     }
 }
