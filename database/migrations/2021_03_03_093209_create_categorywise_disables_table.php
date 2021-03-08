@@ -19,6 +19,8 @@ class CreateCategorywiseDisablesTable extends Migration
             $table->foreign('INSTITUTE_ID')->references('INSTITUTE_ID')->on('INSTITUTES');
             $table->string('DISABLE_TYPE',2)->unsigned();
             $table->foreign('DISABLE_TYPE')->references('DISABLE_TYPE')->on('LOOKUP_DISABILITY');
+            $table->integer('TOTAL_TEACHER',4)->nullable();
+            $table->integer('FEMALE_TEACHER',4)->nullable();
             $table->integer('SIX_TOTAL',4)->nullable();
             $table->integer('SIX_GIRLS',4)->nullable();
             $table->integer('SEVEN_TOTAL',4)->nullable();

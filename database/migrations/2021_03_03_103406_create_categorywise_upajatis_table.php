@@ -19,6 +19,8 @@ class CreateCategorywiseUpajatisTable extends Migration
             $table->foreign('INSTITUTE_ID')->references('INSTITUTE_ID')->on('INSTITUTES');
             $table->integer('upajati_id')->unsigned();
             $table->foreign('upajati_id')->references('id')->on('LOOKUP_UPAJATIS');
+            $table->integer('TOTAL_TEACHER',4)->nullable();
+            $table->integer('FEMALE_TEACHER',4)->nullable();
             $table->integer('SIX_TOTAL',4)->nullable();
             $table->integer('SIX_GIRLS',4)->nullable();
             $table->integer('SEVEN_TOTAL',4)->nullable();

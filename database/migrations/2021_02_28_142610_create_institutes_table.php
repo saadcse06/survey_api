@@ -66,13 +66,12 @@ class CreateInstitutesTable extends Migration
             $table->string('NEAREST_INST_DISTANT',4)->nullable();
             $table->string('BRANCH_YN',2)->nullable();
             $table->integer('BRANCH_NO',5)->nullable();
-            $table->string('CAMPUSYN',3)->nullable();
+            $table->string('DOUBLE_SHIPT_YN',1)->nullable();
+            $table->string('CAMPUS_YN',1)->nullable();
             $table->string('ATTACH_INST_YN',1)->nullable();
-            $table->string('ATTACH_INST_TYPE',5)->nullable();
+            $table->string('ATTACH_INST_TYPE',3)->nullable();
             $table->string('MPO_STATUS',1)->nullable();
             $table->string('TECHNICAL_BRANCH_MPO_STATUS',1)->nullable();
-            $table->integer('MEMBER_TOTAL',5)->nullable();
-            $table->integer('MEMBER_FEMALE',5)->nullable();
             $table->integer('YEAR',4)->nullable();
             $table->timestamps();
         });
@@ -85,6 +84,6 @@ class CreateInstitutesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('institutes');
+        //Schema::dropIfExists('institutes');
     }
 }
