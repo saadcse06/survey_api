@@ -28,6 +28,16 @@ class CreateInstitutesLibrariesTable extends Migration
             $table->string('LIBRARIAN_TEACHER_YN',1)->nullable();
             $table->string('TRAINING_YN',1)->nullable();
             $table->string('LIB_HOUR_INCLUSIVE_YN',1)->nullable();
+            $table->string('LANGUAGE_CLUB_YN',1)->nullable();
+            $table->string('LANGUAGE_BANGLA',1)->nullable();
+            $table->string('LANGUAGE_ENGLISH',1)->nullable();
+            $table->string('LANGUAGE_ARABIC',1)->nullable();
+            $table->string('LANGUAGE_CHINESE',1)->nullable();
+            $table->string('LANGUAGE_KOREAN',1)->nullable();
+            $table->string('LANGUAGE_RUSSIAN',1)->nullable();
+            $table->string('LANGUAGE_JAPAN',1)->nullable();
+            $table->string('LANGUAGE_SPANISH',1)->nullable();
+            $table->string('LANGUAGE_OTHERS',1)->nullable();
             $table->integer('YEAR',4)->nullable();
             $table->timestamps();
         });
