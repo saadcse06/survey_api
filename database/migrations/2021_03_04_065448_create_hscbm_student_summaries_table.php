@@ -18,6 +18,8 @@ class CreateHscbmStudentSummariesTable extends Migration
             $table->string('INSTITUTE_ID',15)->unsigned();
             $table->foreign('INSTITUTE_ID')->references('INSTITUTE_ID')->on('INSTITUTES');
             $table->integer('CUR_ID',2)->nullable();
+            $table->string('TRADE_CODE',5)->nullable();
+            $table->string('TRADE_NAME',50)->nullable();
             $table->integer('ELEVEN_TOTAL',5)->nullable();
             $table->integer('ELEVEN_FEMALE',5)->nullable();
             $table->integer('TWELVE_TOTAL',5)->nullable();
